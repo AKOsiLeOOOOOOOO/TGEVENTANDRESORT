@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - TG Exclusive Resort & Events Place</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="section-heading">Reservation</h2>
+        <p>Make a reservation at TG Exclusive Resort & Events Place and enjoy an unforgettable experience.</p>
+
+        <nav class="navbar navbar-expand-lg navbar-dark black fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavTop" aria-controls="navbarNavTop" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center align-items-end" id="navbarNavTop">
+                    <ul class="navbar-nav">
+                        <li class="nav-item header-link mx-5">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item header-link mx-5">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <img src="tg logo 2.jpg" alt="Logo" class="header-logo">
+                        </li>
+                        <li class="nav-item header-link mx-5">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item header-link mx-5">
+                            <a class="nav-link" href="#contact">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark black fixed-bottom">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavBottom" aria-controls="navbarNavBottom" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center align-items-end" id="navbarNavBottom">
+                    <ul class="navbar-nav">
+                        <li class="nav-item header-link mx-5">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item header-link mx-5">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item header-link mx-5">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item header-link mx-5">
+                            <a class="nav-link" href="#contact">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Reservation Form -->
+        <form action="confirmation.html" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="roomType">Room Type</label>
+                <select class="form-control" id="roomType" name="roomType" required>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Suite">Suite</option>
+                    <option value="Family Room">Family Room</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" class="form-control" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+                <label for="checkout">Check-out Date</label>
+                <input type="date" class="form-control" id="checkout" name="checkout" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" class="form-control" id="guests" name="guests" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Reserve Now</button>
+        </form>
+        
+        <a href="home.html" class="btn btn-secondary mt-3">Back to Home</a>
+    </div>
+</body>
+</html>
